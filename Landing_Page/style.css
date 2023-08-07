@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 5.5rem;
+    background: #54582a;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+nav .hamburger{
+    display: none;
+}
+nav .logo h2{
+    color: rgba(76, 210, 225, 0.821);
+    font-size: 35px;
+    font-weight: 600;
+    margin: 10px;
+    padding: 15px;
+    margin-left: 5px;
+}
+nav .logo{
+    color: #d6d1d1;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+nav .menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+    
+}
+
+nav .menu li{
+    list-style: none;
+}
+
+nav .menu li a{
+    text-decoration: none;
+    color: #d6d1d1;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+}
+
+#bg{
+    width: 100vw;
+    height: 120vh;
+    position: relative;
+}
+
+#bg img{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+}
+
+#bg .section{
+    color:antiquewhite;
+    top: 25vh;
+    left: 8vw;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bg .section h2{
+    font-size: 5rem;
+}
+
+#bg .section p{
+    font-size: 1rem;
+}
+
+#brands{
+    /* box-sizing: border-box; */
+    background: #7b7b55;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center;
+    width: 100%;
+    padding: 0 50px;
+    margin: 2px;
+    
+}
+
+#brands img{
+    width: 10vw;
+    min-width: 7vw;
+    height: 10vh;
+    margin: 25px;
+    cursor: pointer;
+}
+
+#top-demand{
+    background:#95c2c3;
+    height: 100vh;
+    /* top: 25vh; */
+    margin: 2px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+
+#top-demand .heading{
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    color:  #1a1919;
+}
+
+#top-demand .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+}
+
+#top-demand .cards .card{
+    margin: 10px;
+    /* height: 30vh; */
+}
+
+#top-demand .cards .card img{
+    height: 20vh;
+    width: 220px;
+    border-radius: 0.6rem;
+    transition: all 0.5s ease-in-out;
+}
+
+#top-demand .cards .card img:hover{
+    transform: scale(1.1);
+}
+
+.card .container{
+    margin-top: 1rem;
+}
+
+.card .container .explore-more{
+    width: max-content;
+    cursor: pointer;
+}
+
+#app-download{
+    position: relative;
+
+    width: 100vw;
+    height: 30vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(229, 236, 237);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(127,127,176);
+    background: linear-gradient(90deg, rgba(127,127,176,1) 0%, rgba(13,10,61,1) 100%, rgba(0,212,255,1) 100%); 
+}
+
+#app-download .container{
+    position: absolute;
+    left: 10vw;
+
+    font-size: 2rem;
+}
+
+#app-download .appstore-playstore{
+    position: absolute;
+    right: 10vw;
+}
+#app-download .appstore-playstore > img{
+    width: 20vw;
+
+}
+#app-download .appstore-playstore > img:hover{
+    cursor: pointer;
+}
+
+
+footer{
+    position: relative;
+
+    width: 100vw;
+    height: 40vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: var(--font-family);
+    color: rgb(235, 242, 243);
+    background: rgb(127,127,176);
+    background: linear-gradient(90deg, rgba(127,127,176,1) 0%, rgba(13,10,61,1) 100%, rgba(0,212,255,1) 100%); 
+}
+
+footer .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 20vw;
+
+    flex-direction: column;
+
+}
+
+
+footer .social .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85%;
+}
+
+footer .social .logo a{
+    color: rgb(255, 254, 246);
+    font-size: 40px;
+}
+
+footer .social > h3,
+footer .social > p{
+    padding: 1rem 0rem;
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 35%;
+
+}
+
+footer .links h3{
+    font-size: 1rem;
+}
+
+footer .links .f-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    font-size: 0.8rem;
+    flex-direction: column;
+}
+footer .links .f-card li{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;    
+}
+
+
+@media (max-width:1200px){
+    #bg{
+        height: 80vh;
+    }
+    #bg img{
+        height: 100vh;
+    }
+    #bg .section h2{
+        font-size: 4.2rem;
+    }
+    .cards{
+        top: 12vh;
+    }
+    #top-demand{
+        height: 150vh;
+    }
+    nav .menu li a{
+        margin: 15px;
+    }
+    footer .social .logo a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:1000px){
+    #bg{
+        height: 80vh;
+    }
+    #bg img{
+        height: 100vh;
+    }
+    #bg .section{
+        top:30vh;
+        right:10vw;
+    }
+    #bg .section h2{
+        font-size: 4rem;
+    }
+   
+}
+
+@media (max-width:900px){
+    /* #bg{
+        height: 80vh;
+    } */
+    #bg img{
+        height: 80vh;
+    }
+    /* #bg .section h2{
+        font-size: 4.2rem;
+    } */
+    #top-demand{
+        height: 190vh;
+    }
+    nav .menu li a{
+        text-decoration: none;
+        color: #d6d1d1;
+        font-weight: 700;
+        font-size: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 15px;
+    }
+    footer .social .logo a{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:800px){
+    #bg{
+        height: 35vh;
+        width: 100%;
+    }
+    #bg img{
+        height: 35vh;
+        width: 100%;
+    }
+    #bg .section{
+        top:5vh;
+        right: 0vw;
+        width: 40vw;
+    }
+    #bg .section h2{
+        font-size:1.7rem;
+    }
+    .cards{
+        top: 10vh;
+    }
+    #top-demand{
+        height: 180vh;
+    }
+    nav .hamburger{
+        display: flex;
+    }
+
+    nav .hamburger{
+        position: sticky;
+        z-index: 100px;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        cursor: pointer;
+
+        color: aqua;
+    }
+
+    nav .hamburger .closeIcon{
+        display: none;
+        position: fixed;
+    }
+
+    nav .menu{
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: black;
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+        width: 100vw;
+
+        flex-direction: column;
+    }
+
+    #brands{
+        margin-top: -1.1rem;
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+    }
+
+    #brands img{
+        width: 3.5rem;
+    }  
+    nav .hamburger{
+        margin-top: 29px;
+        margin-right: -80px;
+    }
+    #app-download .container h3{
+        font-size: 1.2rem;
+    }
+    footer .social .logo a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:600px){
+    #top-demand{
+        height: 300vh;
+    }
+
+    #app-download .container h3{
+        font-size: 1rem;
+    }
+    footer .social .logo a{
+        font-size: 15px;
+    }
+    nav .hamburger{
+        margin-top: 30px;
+    }
+}
